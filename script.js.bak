@@ -1,0 +1,45 @@
+const cursor = document.querySelector('.cursor');
+
+let mouseX = 0, mouseY = 0;
+let cursorX = 0, cursorY = 0;
+let velocityX = 0, velocityY = 0;
+
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+document.addEventListener('mousedown', () => {
+  cursor.classList.add('active');
+});
+
+document.addEventListener('mouseup', () => {
+  cursor.classList.remove('active');
+});
+
+// Optional: short pulse when clicked
+document.addEventListener('click', () => {
+  cursor.classList.add('click');
+  setTimeout(() => cursor.classList.remove('click'), 150);
+});
+
+function animate() {
+  // Smooth follow with bounce
+  const dx = mouseX - cursorX;
+  const dy = mouseY - cursorY;
+
+  velocityX += dx * 0.1;
+  velocityY += dy * 0.1;
+  velocityX *= 0.6;
+  velocityY *= 0.6;
+
+  cursorX += velocityX;
+  cursorY += velocityY;
+
+  cursor.style.transform = `translate(${cursorX}px, ${cursorY}px)`;
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
