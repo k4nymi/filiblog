@@ -1,49 +1,9 @@
-@font-face {
-  font-family: 'heavy';
-  src: url('fonts/GenRyuMin2JP-H.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'reg';
-  src: url('fonts/GenRyuMin2JP-R.otf') format('opentype');
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'bold';
-  src: url('fonts/GenRyuMin2JP-B.otf') format('opentype');
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'sb';
-  src: url('fonts/GenRyuMin2JP-SB.otf') format('opentype');
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'light';
-  src: url('fonts/GenRyuMin2JP-L.otf') format('opentype');
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'extralight';
-  src: url('fonts/GenRyuMin2JP-XL.otf') format('opentype');
-  font-weight: normal;
-}
 
 @font-face {
   font-family: 'call1';
   src: url('fonts/acgyosyo.ttf') format('truetype');
   font-weight: normal;
 }
-@font-face {
-  font-family: 'call2';
-  src: url('fonts/ackaisyo.ttf') format('truetype');
-  font-weight: normal;
-}
-
 html, body {
 
   overflow-y: scroll;
@@ -59,7 +19,7 @@ body::-webkit-scrollbar {
 
 body {
     margin: 0;
-    font-family: 'heavy', sans-serif;
+    font-family: 'call1', sans-serif;
     cursor: none;
     background-image: linear-gradient(135deg, #FFEAD0 0%, #FFEAD0 100%);
     min-height: 200vh;
@@ -102,7 +62,7 @@ body {
 .nav-button {
     text-decoration: none;
     color: #cd8f14;
-    font-family: 'heavy', sans-serif;
+    font-family: 'call1', sans-serif;
 
     display: flex;
     align-items: center;
@@ -161,7 +121,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: 'reg', sans-serif;
+    font-family: 'call1', sans-serif;
     color: #cd8f14;
     font-size: 1.3em;
     line-height: 0.6;
@@ -251,6 +211,14 @@ body {
   background-color:red;
 }
 
+.b{
+  position: sticky;
+  z-index:102;
+  height:100vh;
+  width:100vw;
+  background-color:red;
+}
+
 #aa{
   margin-top:10vh;
   background-image: url(images/01.png);
@@ -265,4 +233,57 @@ body {
 }
 #ad{
   background-image: url(images/04.png);
+}
+
+#ba{
+  background-image: url(images/2/1.png);
+}
+
+#bb{
+  background-image: url(images/2/2.png);
+}
+
+#bc{
+  background-image: url(images/2/3.png);
+}
+#bd{
+  background-image: url(images/2/4.png);
+}
+
+#be{
+  background-image: url(images/2/5.png);
+}
+
+#bf{
+  background-image: url(images/2/6.png);
+}
+
+#bg{
+  background-image: url(images/2/7.png);
+}
+
+#bh{
+  background-image: url(images/2/8.png);
+}
+
+#bi{
+  background-image: url(images/2/9.png);
+  height:50vh;
+}
+
+
+.top-text2 {
+    position: fixed;
+    top: 35px;
+    left: 30px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'call1', sans-serif;
+    color: #14cdc7;
+    font-size: 1.3em;
+    line-height: 0.6;
+    z-index: 1000;
+    transition: color 1s;
 }
