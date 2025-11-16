@@ -287,3 +287,26 @@ body {
     z-index: 1000;
     transition: color 1s;
 }
+
+#ca{
+  background-image: url(images/3/1.png);
+}
+
+#cb{
+  background-image: url(images/3/2.png);
+}
+
+#cc{
+  background-image: url(images/3/3.png);
+}
+#cd{
+  background-image: url(images/3/4.png);
+}
+
+#ce{
+  background-image: url(images/3/5.png);
+}
+
+#cf{
+  background-image: url(images/3/6.png);
+}
